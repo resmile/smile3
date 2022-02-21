@@ -1,0 +1,59 @@
+{
+  "version": "1",
+  "cognitoConfig": {
+    "resourceNameTruncated": "smile37f472636",
+    "userPoolName": "smile3",
+    "autoVerifiedAttributes": [
+      "phone_number"
+    ],
+    "mfaConfiguration": "OFF",
+    "mfaTypes": [
+      "SMS Text Message"
+    ],
+    "smsAuthenticationMessage": "Your authentication code is {####}",
+    "smsVerificationMessage": "Your verification code is {####}",
+    "emailVerificationSubject": "Your verification code",
+    "emailVerificationMessage": "Your verification code is {####}",
+    "defaultPasswordPolicy": false,
+    "passwordPolicyMinLength": 8,
+    "passwordPolicyCharacters": [],
+    "requiredAttributes": [
+      "email",
+      "name",
+      "phone_number"
+    ],
+    "aliasAttributes": [],
+    "userpoolClientGenerateSecret": false,
+    "userpoolClientRefreshTokenValidity": "30",
+    "userpoolClientWriteAttributes": [
+      "email"
+    ],
+    "userpoolClientReadAttributes": [
+      "email"
+    ],
+    "userpoolClientLambdaRole": "smile37f472636_userpoolclient_lambda_role",
+    "userpoolClientSetAttributes": false,
+    "sharedId": "7f472636",
+    "resourceName": "smile3",
+    "authSelections": "userPoolOnly",
+    "useDefault": "manual",
+    "userPoolGroups": true,
+    "adminQueries": true,
+    "triggers": {
+      "PostConfirmation": [
+        "add-to-group"
+      ],
+      "PreSignup": [
+        "custom"
+      ]
+    },
+    "hostedUI": false,
+    "userPoolGroupList": [
+      "admin"
+    ],
+    "adminQueryGroup": "admin",
+    "serviceName": "Cognito",
+    "usernameCaseSensitive": false,
+    "useEnabledMfas": true
+  }
+}
